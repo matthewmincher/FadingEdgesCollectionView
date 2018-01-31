@@ -46,10 +46,10 @@ extension UIView {
 }*/
 
 public class FadingEdgesCollectionView: UICollectionView {
-    private let fadeTagLeft = Int(NSDate().timeIntervalSince1970 * 1000) + 7110
-    private let fadeTagRight = Int(NSDate().timeIntervalSince1970 * 1000) + 7120
-    private let fadeTagTop = Int(NSDate().timeIntervalSince1970 * 1000) + 7130
-    private let fadeTagBottom = Int(NSDate().timeIntervalSince1970 * 1000) + 7140
+    private let fadeTagLeft = Int(NSDate().timeIntervalSince1970) + 7110
+    private let fadeTagRight = Int(NSDate().timeIntervalSince1970) + 7120
+    private let fadeTagTop = Int(NSDate().timeIntervalSince1970) + 7130
+    private let fadeTagBottom = Int(NSDate().timeIntervalSince1970) + 7140
 
     public var gradientLength: CGFloat = 75.0 {
         willSet(newValue) {

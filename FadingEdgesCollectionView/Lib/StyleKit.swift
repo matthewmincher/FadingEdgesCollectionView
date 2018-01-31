@@ -17,7 +17,7 @@ public class StyleKit : NSObject {
 
     //// Drawing Methods
 
-    public dynamic class func drawChevron(color: UIColor = UIColor(red: 0.311, green: 0.772, blue: 0.211, alpha: 1.000)) {
+    @objc public dynamic class func drawChevron(color: UIColor = UIColor(red: 0.311, green: 0.772, blue: 0.211, alpha: 1.000)) {
 
         //// Bezier Drawing
         let bezierPath = UIBezierPath()
@@ -38,7 +38,7 @@ public class StyleKit : NSObject {
 
     //// Generated Images
 
-    public dynamic class func imageOfChevron(color: UIColor = UIColor(red: 0.311, green: 0.772, blue: 0.211, alpha: 1.000)) -> UIImage {
+    @objc public dynamic class func imageOfChevron(color: UIColor = UIColor(red: 0.311, green: 0.772, blue: 0.211, alpha: 1.000)) -> UIImage {
         UIGraphicsBeginImageContextWithOptions(CGSize(width: 14, height: 14), false, 0)
             StyleKit.drawChevron(color: color)
 
