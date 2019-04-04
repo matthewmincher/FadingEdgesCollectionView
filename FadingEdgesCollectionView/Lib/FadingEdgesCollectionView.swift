@@ -233,7 +233,7 @@ public class FadingEdgesCollectionView: UICollectionView {
         setAppropriateEdgeAlphaAndUpdateGradientBounds()
     }
 
-    private func addComponents(side: NSLayoutAttribute, components: Components) {
+	private func addComponents(side: NSLayoutConstraint.Attribute, components: Components) {
         let debug = false
 
         let arrowsOn = components.contains(.arrows)
@@ -373,7 +373,7 @@ public class FadingEdgesCollectionView: UICollectionView {
         }
     }
 
-    private func rightOffsetFor(direction: NSLayoutAttribute, distance: CGFloat) -> CGPoint {
+	private func rightOffsetFor(direction: NSLayoutConstraint.Attribute, distance: CGFloat) -> CGPoint {
         switch direction {
             case .left:
                 return CGPoint(x: max(contentOffset.x - distance, 0), y: 0)

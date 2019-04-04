@@ -10,6 +10,12 @@ DEPENDENCIES:
   - HTGradientEasing-Fixed
   - UIColor-CrossFade
 
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AHEasing
+    - HTGradientEasing-Fixed
+    - UIColor-CrossFade
+
 SPEC CHECKSUMS:
   AHEasing: 847f583bcd83a2bb850e38ccdb26d22e2593f34d
   HTGradientEasing-Fixed: 5fd10fef450de9517cb49f013dfc340d86b9f0ec
@@ -17,4 +23,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 540325f1d0c024f1b77fe7890f7b7740de45445c
 
-COCOAPODS: 1.3.1
+COCOAPODS: 1.5.3
